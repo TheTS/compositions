@@ -1800,7 +1800,7 @@ power.acomp <- function(x,s) {
     rmult(unclass(x)/unclass(y))
 }
 
-"%*%" <- function(x,y) UseMethod("%*%",structure(c(),class=c(class(x),class(y))))
+"%*%" <- function(x,y) UseMethod("%*%",structure(list(),class=c(class(x),class(y))))
 
 
 #gsi.internaltmp <- get("%*%",pos="package:base")
